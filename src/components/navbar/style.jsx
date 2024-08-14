@@ -19,17 +19,18 @@ align-items: center;
 export const StyledNavLink = styled(NavLink)`
 display: inline-block;
   text-decoration: none;
-  color: blue;
+  color: #F25C05;
   margin: 0 10px;
  
 
   &.active {
     font-weight: bold;
-    color: red;
+    color: #A60303;
   }
 
   &:hover {
-    text-decoration: underline;
+  transform: scale(1.1);
+  color:  orangered;
    
   }
 `;
