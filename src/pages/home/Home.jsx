@@ -1,8 +1,18 @@
 import React from 'react'
 
+import FotoDiv from './style'
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+     
+      <FotoDiv>
+         <input type="text" />
+         <p>AYCAS REZEPTE</p>
+      </FotoDiv>  
+     
+      
+    </div>
   )
 }
 

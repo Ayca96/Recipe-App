@@ -6,7 +6,7 @@ const NavbarContainer = styled.div`
  flex-wrap: wrap;
  align-items: center;
  justify-content: space-between;
-
+ background-color: #BABF21;
 `;
 
 export const ListDiv = styled.div`

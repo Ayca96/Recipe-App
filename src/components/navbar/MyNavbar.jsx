@@ -1,11 +1,12 @@
 import React from 'react'
 // import { NavLink } from 'react-router-dom';
 import NavbarContainer, { ListDiv, StyledNavLink, UnorderedList } from './style'; 
+import Logo from "../../images/AYCAS REZEPTE.png"
 
 const MyNavbar = () => {
   return (
     <NavbarContainer className='navContainer'>
-      <div>Aycas Rezepte</div>
+      <div><img src={Logo} alt="" width="170px" height="170px" style={{borderRadius:"50%"}} /></div>
 
       <ListDiv>
         <UnorderedList>
