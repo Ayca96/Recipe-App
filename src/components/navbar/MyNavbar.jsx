@@ -13,7 +13,7 @@ const MyNavbar = () => {
           <li> <StyledNavLink to="/"> STARTSEITE </StyledNavLink> </li>
           <li> <StyledNavLink to="/über-uns"> UBER UNS </StyledNavLink> </li>
           <li> <StyledNavLink to="/registirieren"> REGISTIRIEREN </StyledNavLink> </li>
-          <li> <StyledNavLink to="/anmelden"> ANMELDEN </StyledNavLink> </li>
+          <li> <StyledNavLink to="/über-uns"> ANMELDEN </StyledNavLink> </li>
         </UnorderedList>
       </ListDiv>
     </NavbarContainer>

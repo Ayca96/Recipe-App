@@ -5,7 +5,8 @@ const NavbarContainer = styled.div`
  display: flex;
  flex-wrap: wrap;
  align-items: center;
- justify-content: space-between;
+ justify-content: center;
+ gap: 10rem;
  background-color: #BABF21;
 `;
 
@@ -21,6 +22,11 @@ display: inline-block;
   text-decoration: none;
   color: #F25C05;
   margin: 0 10px;
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  line-height: 2.5rem;
+  box-shadow: 8px 8px 3px 1px rgba(0, 0, 0, 0.3);
+
  
 
   &.active {

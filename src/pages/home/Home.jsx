@@ -9,7 +9,7 @@ const Home = () => {
       <FotoDiv>
    
          <FormWrapper>
-            <Paragraf>AYCAS REZEPTE</Paragraf>
+            <Paragraf>Mit Liebe gemacht</Paragraf>
           <StyledInput type="text" placeholder='Suche nach einem Rezept' />
           
           <label htmlFor=""></label>
