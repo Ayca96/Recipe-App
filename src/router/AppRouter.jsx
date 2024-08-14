@@ -1,8 +1,17 @@
 import React from 'react'
+import { Navbar } from 'react-bootstrap';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 const AppRouter = () => {
   return (
-    <div>AppRouter</div>
+   
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route/>
+        </Routes>
+      </Router>
+   
   )
 }
 
