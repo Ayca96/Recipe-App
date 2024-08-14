@@ -1,9 +1,9 @@
 import React from 'react'
-import { NavLink } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const MyNavbar = () => {
   return (
-    <div>
+    <div className='navContainer'>
       <div>Aycas Rezepte</div>
 
       <div>
@@ -18,4 +18,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default MyNavbar
