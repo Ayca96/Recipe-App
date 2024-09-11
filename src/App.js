@@ -1,14 +1,21 @@
+import React from "react";
 import AppRouter from "./router/AppRouter";
-import "./App.css"
+import RecipeProvider from "./context/RecipeProvider";
 
 
 
-function App() {
-  return (
-    <div>
-    <AppRouter/>
-    </div>
-  );
-}
+
+const App = () => {
+ 
+//! context sayfamız ile bütün browser ı sarmalladık
+   return (
+     <RecipeProvider>
+     <AppRouter/>
+     </RecipeProvider>
+   );
+   
+  
+  
+};
 
 export default App;

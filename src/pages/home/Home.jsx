@@ -1,36 +1,22 @@
-import React from 'react'
-
-import FotoDiv, { FormWrapper, Paragraf, StyledButton, StyledInput, StyledSelect } from './style'
+import React, { useContext } from 'react'
+import Header from '../../components/header/Header'
+import RecipeCard from "./RecipeCard";
+import homeSvg from "../../assets/home.svg"
+import { RecipeContext } from '../../context/RecipeProvider';
 
 const Home = () => {
+const {recipes}=useContext(RecipeContext)
+
   return (
     <div>
-     
-      <FotoDiv>
-   
-         <FormWrapper>
-            <Paragraf>Mit Liebe gemacht</Paragraf>
-          <StyledInput type="text" placeholder='Suche nach einem Rezept' />
-          
-          <label htmlFor=""></label>
-          <StyledSelect name="FRÜHSTÜCK" id="kahvalti">
-            <option value="FRÜHSTÜCK">FRÜHSTÜCK</option>
-            <option value="MITTAGESSEN">MITTAGESSEN</option>
-            <option value="ABENDESSEN">ABENDESSEN</option>
-            <option value="SNACKS">SNACKS</option>
-            <option value="BRUNCH">BRUNCH</option>
-            <option value="TEEZEIT">TEEZEIT</option>
-          </StyledSelect>
+      <Header />
 
-          <StyledButton>SUCHEN</StyledButton>
-         </FormWrapper>
-      
-        
-      </FotoDiv>  
+{recipes.length > 0  ? ( <RecipeCard />): <img src={homeSvg}/>}
+
+      {/* dizi doluysa <RecipeCard /> a git boşsa aşçı resmi */}
      
-      
     </div>
-  )
+  );
 }
 
 export default Home

@@ -1,25 +1,34 @@
-import React from 'react'
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Home from '../pages/home/Home';
-import About from '../pages/about/About';
-import Register from '../pages/register/Register';
-import Login from '../pages/login/Login';
-import MyNavbar from '../components/navbar/MyNavbar';
-
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "../pages/login/Login";
+import Home from "../pages/home/Home";
+import PrivateRouter from "./PrivateRouter";
+import Details from "../pages/details/Details";
+import Navbar from "../components/navbar/Navbar";
+import About from "../pages/about/About";
+import Footer from "../components/footer/Footer";
+import NotFound from "../pages/errorPage/NotFound";
 const AppRouter = () => {
   return (
-   
-      <Router>
-        <MyNavbar/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/über-uns" element={<About/>}/>
-          <Route path="/registirieren" element={<Register/>}/>
-          <Route path="/anmelden" element={<Login/>}/>
-        </Routes>
-      </Router>
-   
-  )
-}
+    <BrowserRouter>
+      <Navbar />
 
-export default AppRouter
+      <Routes>
+        <Route path="/" element={<Login />} />
+
+        <Route path="/home" element={<PrivateRouter />}>
+          <Route path="" element={<Home />} />
+        </Route>
+        <Route path="/details" element={<Details />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+
+
+      </Routes>
+
+      <Footer />
+    </BrowserRouter>
+  );
+};
+
+export default AppRouter;
