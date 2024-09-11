@@ -32,6 +32,8 @@ const RecipeProvider = ({ children }) => {
 
     try {
       const { data } = await axios.get(url);
+      console.log(data);
+      
 
       setRecipes(data.hits);
 
