@@ -24,7 +24,7 @@ const navigate=useNavigate()
 
           <RecipeButton onClick={()=>navigate("/details", {state:{recipe}})}>Details</RecipeButton>
         </Cards>
-      ))}
+      ))}  
     </MainContainer>
   );
 };
