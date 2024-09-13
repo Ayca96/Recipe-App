@@ -16,7 +16,7 @@ export const Nav = styled.div`
   height: 75px;
   font-size: 2rem;
 `;
-
+ 
 export const Menu = styled.div`
   /* navbardaki 3 kelime about ...hepsini içine alan sarmalın (kutunun ) özellikleri*/
   background: #e1f1dd;

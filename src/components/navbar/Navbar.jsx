@@ -10,7 +10,6 @@ const Navbar = () => {
         <i> {"<Clarusway/>"}</i>
         <span>recipe</span>
       </Logo>
-
       <Hamburger onClick={() => setOpen(!open)}>
         <GiHamburgerMenu />
       </Hamburger>
