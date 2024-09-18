@@ -1,9 +1,9 @@
 import "./Footer.css";
-import designSvg from "../../assets/design.svg";
+
 
 const Footer = () => {
   return (
-    <div className="footer-div">
+    <div>
       <a
         href="https://github.com/AshleyMiller79"
         target="_blank"
@@ -17,7 +17,7 @@ const Footer = () => {
         {/* <></> işaretleriyle kod formatında yazabilmek  için code */}
       </a>
       <img
-        src={designSvg}
+        src=""
         alt="design"
         style={{ width: "40px", margin: "0  25px 0 10px" }}
       />

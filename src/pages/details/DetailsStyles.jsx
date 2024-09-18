@@ -7,7 +7,7 @@ export const DetailContainer = styled.div`
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  background: #00adb5;
+ 
   min-height: calc(100vh - 75px);
   /* height: fit-content; */
   padding: 5px;
@@ -23,7 +23,7 @@ export const DetailPart = styled.div`
   margin: 1rem;
   border: 1px solid white;
   border-radius: 5px;
-  background-color: pink;
+ 
   /* background-color: #e1f1dd; */
   /* height: calc(100vh - 300px); */
   @media (max-width: 1250px) {
@@ -51,7 +51,7 @@ export const ImgContainer = styled.div`
 
 export const HeaderContainer = styled.div`
   /* üstteki başlık ve kadın resmi */
-  background-color: darkgray;
+
 
   display: flex;
   justify-content: space-evenly;
@@ -70,7 +70,7 @@ export const IngredContainer = styled.div`
   width: 400px;
   font-size: 1.4rem;
   margin: 2rem;
-  background-color: gray;
+
 `;
 
 export const OtherPart = styled.div`
@@ -84,5 +84,5 @@ export const OtherPart = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* span{display:block; margin :1rem} */
+ 
 `;

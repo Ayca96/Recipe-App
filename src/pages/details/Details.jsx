@@ -1,6 +1,6 @@
 import React from 'react'
 import { DetailContainer, DetailPart, HeaderContainer, ImgContainer, IngredContainer, OtherPart } from './DetailsStyles'
-import dietSvg from "../../assets/diet.svg"
+
 import { useLocation } from 'react-router-dom'
 const Details = () => {
 
@@ -14,7 +14,7 @@ console.log(recipe);
     <DetailContainer>
       <HeaderContainer>
         <h1>{recipe.label} </h1>
-        <img src={dietSvg} alt="" />
+        <img src="" alt="" />
       </HeaderContainer>
 
       <DetailPart>

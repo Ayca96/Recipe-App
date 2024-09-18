@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Button, FoodInput, FormContainer, HeaderContainer, MainHeader, Select } from './HeaderStyles'
-import { RecipeContext } from '../../context/RecipeProvider';
+import { RecipeContext } from '../../context/AuthContext';
 
 const Header = () => {
 

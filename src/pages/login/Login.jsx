@@ -1,9 +1,8 @@
 import React from 'react'
 import { FormContainer, Header, LoginContainer, StyledButton, StyledForm, StyledImg, StyledInput } from './LoginStyles'
 
-import mealFoto from "../../assets/meal.svg"
 import { useContext } from 'react'
-import { RecipeContext } from '../../context/RecipeProvider'
+import { RecipeContext } from '../../context/AuthContext'
 import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
@@ -25,7 +24,7 @@ navigate("/home")
   return (
     <LoginContainer>
       <FormContainer>
-        <StyledImg src={mealFoto} />
+        <StyledImg src="" />
 
         <Header> {"<Clarusway/>"} recipe </Header>
 

@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import { Hamburger, Logo, Menu, MenuLink, Nav } from './NavbarStyles'
 import { GiHamburgerMenu } from "react-icons/gi";
+
+
 const Navbar = () => {
 
   const[open,setOpen]=useState(false)
   return (
     <Nav>
       <Logo to="/home">
-        <i> {"<Clarusway/>"}</i>
-        <span>recipe</span>
+      <p style={{ }}>Mama</p>
       </Logo>
       <Hamburger onClick={() => setOpen(!open)}>
         <GiHamburgerMenu />

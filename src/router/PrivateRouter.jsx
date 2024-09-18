@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { useContext } from 'react'
-import { RecipeContext } from '../context/RecipeProvider'
+import { RecipeContext } from '../context/AuthContext'
 import { Navigate, Outlet } from 'react-router-dom'
 
 const PrivateRouter = () => {

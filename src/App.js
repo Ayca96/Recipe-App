@@ -1,6 +1,6 @@
 import React from "react";
 import AppRouter from "./router/AppRouter";
-import RecipeProvider from "./context/RecipeProvider";
+import AuthContext from "./context/AuthContext";
 
 
 
@@ -9,9 +9,9 @@ const App = () => {
  
 //! context sayfamız ile bütün browser ı sarmalladık
    return (
-     <RecipeProvider>
+     <AuthContext>
      <AppRouter/>
-     </RecipeProvider>
+     </AuthContext>
    );
    
   

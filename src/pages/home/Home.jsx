@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import Header from '../../components/header/Header'
 import RecipeCard from "./RecipeCard";
-import homeSvg from "../../assets/home.svg"
-import { RecipeContext } from '../../context/RecipeProvider';
+
+import { RecipeContext } from '../../context/AuthContext';
 
 const Home = () => {
 const {recipes}=useContext(RecipeContext)
@@ -11,7 +11,7 @@ const {recipes}=useContext(RecipeContext)
     <div>
       <Header />
 
-{recipes.length > 0  ? ( <RecipeCard />): <img src={homeSvg}/>}
+{recipes.length > 0  ? ( <RecipeCard />): <img src=""/>}
 
       {/* dizi doluysa <RecipeCard /> a git boşsa aşçı resmi */}
      

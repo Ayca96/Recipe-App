@@ -8,7 +8,7 @@ export const RecipeContext = createContext();
 const APP_ID = "bfbb3efc";
 const APP_KEY = "43faeee790f26cd82b28050d3031619d";
 
-const RecipeProvider = ({ children }) => {
+const AuthContext = ({ children }) => {
   //! login ve privaterouter sayfalarında gerekli usestateleri açtık
 
   const [name, setName] = useState(localStorage.getItem("username") || "");
@@ -50,7 +50,7 @@ if(error){
 }
 
 if(loading){
-  return <p> LOADINGGGG.....</p>
+  return <p> Laden...</p>
 }
 
   return (
@@ -71,4 +71,4 @@ if(loading){
   );
 };
 
-export default RecipeProvider;
+export default AuthContext;

@@ -11,15 +11,15 @@ export const Nav = styled.div`
   align-items: center; // dikeyde ortala
   flex-wrap: wrap;
   /* Varsayılan olarak esnek öğeler tek bir satıra sığmaya çalışırlar. Gerektiğinde birden fazla satıra yaymak için bu özelliği kullanabilirsiniz */
-  background: salmon;
+  /* background: salmon; */
   border-radius: 0 0 10px 10px;
-  height: 75px;
+  height: 125px;
   font-size: 2rem;
 `;
  
 export const Menu = styled.div`
   /* navbardaki 3 kelime about ...hepsini içine alan sarmalın (kutunun ) özellikleri*/
-  background: #e1f1dd;
+  /* background: #e1f1dd; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@ export const Menu = styled.div`
     text-align: center;
     text-decoration: none;
     /* kelimelerin altı çizili olmasın */
-    color: #02475e;
+    /* color: #02475e; */
 
     transition: all 0.3s ease-in;
     font-size: 2rem;
@@ -62,14 +62,14 @@ export const Menu = styled.div`
 
 export const MenuLink = styled(Link)`
   /* navbardaki 3 kelime ... tek tek about vs yazanların özellikleri YEŞİL*/
-  background-color: green;
+  /* background-color: green; */
 
   padding: 1rem 2rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   /* kelimelerin altı çizili olmasın */
-  color: #02475e;
+  /* color: #02475e; */
 
   transition: all 0.3s ease-in;
   font-size: 2rem;
@@ -100,7 +100,7 @@ export const Logo = styled(MenuLink)`
    
     font-weight: 400;
    
-    color: #00adb5;
+    /* color: #00adb5; */
   }
 `;
 
